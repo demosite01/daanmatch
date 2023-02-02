@@ -23,13 +23,18 @@
 </head>
 
 <body>
+  <!-- preloader Splash Screen start -->
+  <section class="Splash preloader">
+    <a href=""><img src="assets/img/logodm.png" alt="img" class="img-fluid" /></a>
+  </section>
+  <!-- preloader  Splash Screen end -->
   <main>
     <!-- login wrapp start -->
     <div class="login-wrapp">
       <div class="logo">
         <a href=""><img src="assets/img/logodm.png" alt="img" class="img-fluid" /></a>
       </div>
-      <h4>Registration</h4>
+      <h4>Registration | DaanMatch</h4>
 
       <form class="login" method="post" action="">
         <div class="mb-3">
@@ -82,11 +87,16 @@
   </main>
 
   <!--  jQuery js-->
-  <script src="vendor/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <!-- bootstrap Bundle with Popper -->
-  <script src="vendor/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   <!-- slick slider js cdn link -->
-  <script src="vendor/slick-carousel/slick/slick.min.js"></script>
+  <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
+  <script>
+    $(window).on("load", function () {
+      $(".preloader").fadeOut("slow");
+    });
+  </script>
   <script>
     function myFunction() {
       var x = document.getElementById("myInput");
